@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+    margin: 0;
+}
+.background{
+    background: url('https://images.unsplash.com/photo-1645450618478-94a2b68d1d81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')
+    no-repeat center center/cover;
+    position: absolute;
+    top: -30px; /*blur causes white borders so to reduce that we have set -30px*/
+    left: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1; /*put image behind the load text*/
+    filter: blur(0px);
+}
+.loading-text{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
